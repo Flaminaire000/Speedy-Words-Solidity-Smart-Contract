@@ -58,7 +58,6 @@ contract NameThingsCities {
     
     modifier onlyByMaster(bool isMaster) {
         require(msg.sender != mario.playerAddress, "User is not the Master :(");
-        _;
     }
     
     function compareBytes(bytes1 a, bytes1 b) internal pure returns (bool) { 
